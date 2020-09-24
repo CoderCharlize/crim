@@ -46,6 +46,7 @@ two_threads_avx$Time
 gpu$Time
 
 #In our case, get MCMC sample using GPU with initial values of 1 and spatial & temporal background lengthscales set to 1.6 kilometers and 14 days
+#In the lastest version of hpHawkes, can set lower and upper bounds for all parameters (no fixed parameters anymore)
 #Again change the "simd" and "thread" arguments to explore different MCMC running times
 cpu_sse <- sampler(n_iter=1000,
                burnIn=200,
